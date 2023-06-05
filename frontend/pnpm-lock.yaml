@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  backend:
+    specifier: file:../backend/pkg
+    version: file:../backend/pkg
+
 devDependencies:
   typescript:
     specifier: ^5.0.2
@@ -319,3 +324,9 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  file:../backend/pkg:
+    resolution: {directory: ../backend/pkg, type: directory}
+    name: pendulum
+    version: 0.1.0
+    dev: false
